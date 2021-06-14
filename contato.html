@@ -3,16 +3,15 @@
     <head>
         <meta charset="ut-f8">
         <meta name="author" content="Levi Alves Junior">
-        <meta name="description" content="teste HTML5 CSS3">
+        <meta name="description" content="Desenvolvimento">
         <meta name="robots" content="index, nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>teste</title>
-        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
-        <link rel="stylesheet" type="text/css" href="_css/menu.css">
-        <link rel="stylesheet" type="text/css" href="_css/contato.css">
+        <title>Desenvolvimento - Contato</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="shortcut icon" type="imagem/png" href="icon/resp.png">
     </head>
-    <body background="_img/imagem-1.jpg">                
+    <body background="img/imagem-1.jpg">                
         <header>
             <nav class="nav-wrapper">
                 <!-- menu desktop -->
@@ -32,35 +31,36 @@
             </nav>
         </header>
         
-        <section class="principal conteiner">
-            <form method="post" action="">
-                <fieldset>
-                    <legend><span class="titulo">Dados Pessoais</span></legend>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" class="campo" required autofocus><br><br>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" class="campo" required><br><br>
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" class="campo" required><br><br>
+        <main>
+            <div class="margin-top"></div> 
+            <section class="principal conteiner">
+                <form method="post" action="">
+                    <fieldset>
+                        <legend><span class="titulo">Contato</span></legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" class="campo" required autofocus><br><br>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" class="campo" required><br><br>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" class="campo" required><br><br>
+    
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn">Limpar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
 
-                    <button type="submit" class="btn">Enviar</button>
-                    <button type="reset" class="btn">Limpar</button>
-                </fieldset>
-            </form>
-        </section>
-
-        <footer>
-            <div class="footer-wrapper flex conteiner">
+        <footer class="margin-top">
+            <div class="footer-wrapper responsivo conteiner">
                 <div class="footer-item">
                     <p><span class="titulo">html5 e css3</span><br>Levi Alves Junior</p>
                     <p>Copyright 2021 - Todos os Direitos Reservados</p>
                 </div>
-
                 <div class="footer-item">
                     <p><span class="titulo">Layout Responsivo</span></p>
                     <p>Técnicas<br>de Desenvolvimento Web<br>de Forma Pratica Eficiente</p>
                 </div>
-
                 <div class="footer-item">
                     <ul class="footer-menu">
                         <li><a href="index.html">HOME</a></li>

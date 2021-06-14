@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root{
+    --cor1: #fff;
+    --cor2: #000000;
+    --corPadrao: #000000;
+    --corPadrao2: #fff;
+    --corPalavra: #fff;
+    --corPalavraMenu: #fff;
+}
+
+/* ======================================================================================= */
+/* GERAL */
+/* ======================================================================================= */
+.margin-top{
+    margin-top: 80px;
+}
+.margi-bottom{
+    margin-bottom: 30px;
+}
+
+.branco{
+    color: var(--cor1);
+}
+
+.palavra-branco{
+    color: var(--corPalavra)
+}
+
+.img-responsivo{
+    max-width: 100%;
+    height: auto;
+}
+
+.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.responsivo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.conteiner{
+    width: 80%;
+    margin: auto;
+}
+@media only screen and (max-width: 1300px){
+    .conteiner{
+        width: 90%;
+    }
+}
+
+section.principal{
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    padding: 20px;
+    background-color: var(--corPadrao);
+}
+
+/* ==================================== */
+/* MENU */
+/* ==================================== */
+.nav-wrapper{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--corPadrao);
+    position: relative;
+}
+
+/* =============================================== */
+/* menu desktop */
+ul.menu-desktop{
+    list-style-type: none;
+    display: flex;
+}
+ul.menu-desktop li{
+    text-align: center;
+}
+ul.menu-desktop li a{
+    height: 50px;
+    width: 150px;
+    text-decoration: none;
+    color: var(--corPalavraMenu);
+    display: block;    
+}
+ul.menu-desktop li a:hover{
+    border-bottom: 3px solid #fff;     
+}
+
+/* =============================================== */
+/* menu desktop */
+ul.menu-mobile, .lbl-menu, #check{
+    display: none;
+}
+
+.lbl-menu{
+    color: #fff;
+    font-size: 40px;
+    width: 50px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+ul.menu-mobile{
+    list-style-type: none;
+    width: 200px;
+    margin-left: -500px;
+    transition: 0.5s;
+}
+ul.menu-mobile li{
+    background-color: var(--corPadrao);
+    text-align: left;
+}
+ul.menu-mobile li a{
+    text-decoration: none;
+    color: var(--corPalavraMenu);
+    display: block;
+    padding-left: 15px;
+}
+ul.menu-mobile li a:hover{
+    border-right: 3px solid #fff;
+}
+#check:checked ~ ul.menu-mobile{
+    margin-left: 0;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1000px){
+    .lbl-menu, ul.menu-mobile{
+        display: block;
+    }
+    ul.menu-desktop{
+        display: none;
+    }
+}
+
+/* ==================================== */
+/* FOOTER */
+/* ==================================== */
+footer{
+    background-color: var(--corPadrao);
+}
+footer .footer-wrapper{
+    padding: 50px 0;
+}
+footer .footer-wrapper .footer-item{
+    width: 30%;
+    margin-bottom: 50px;
+}
+footer .footer-wrapper .footer-item p{
+    color: var(--corPalavra);
+}
+@media only screen and (max-width: 1000px){
+    footer .footer-wrapper .footer-item{
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 500px){
+    footer .footer-wrapper{
+        flex-direction: column;
+    }
+    footer .footer-wrapper .footer-item{
+        width: 100%;
+    }
+}
+
+/* menu rodape */
+ul.footer-menu{
+    list-style-type: none;
+}
+ul.footer-menu li a{
+    text-decoration: none;
+    color: var(--corPalavraMenu);
+    display: block;
+    padding: 3px;
+    border-left: 3px solid #000000;
+}
+ul.footer-menu li a:hover{
+    border-left: 3px solid #fff;
+}
+
+/* ======================================================================================= */
+/* HOME */
+/* ======================================================================================= */
+.artigos .item-artigo{
+    width: 24%;
+    height: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: var(--corPadrao2);
+}
+.artigos .item-artigo figure{
+    text-align: center;
+    border: 1px solid var(--cor2);
+    padding: 5px;
+}
+
+.logo{
+    width: 256px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    padding: 10px 10px 0;
+    background-color: var(--corPadrao2);
+}
+
+.texto-info{
+    width: 75%;
+}
+
+@media only screen and (max-width: 1300px){
+    .artigos .item-artigo{
+        width: 49%;
+    }
+    /* ==============*/
+    .texto-info{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){  
+    .artigos{
+        flex-direction: column;
+    }
+    .artigos .item-artigo{
+        width: 100%;
+    }
+    /* ==============*/
+    .texto-info{
+        width: 100%;
+    } 
+}
+
+/* ======================================================================================= */
+/* QUEM SOMOS */
+/* ======================================================================================= */
+.circulo{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.pessoa{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px
+}
+@media only screen and (max-width: 1000px){
+    .pessoa{
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .pessoas{
+        flex-direction: column;
+    }
+    .pessoa{
+        width: 100%;
+    }
+}
+
+.video-wrapper{
+    position: relative;
+    padding-bottom: 50.25%;
+}
+.video-wrapper video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* ======================================================================================= */
+/* CONTATO */
+/* ======================================================================================= */
+fieldset{
+    color: var(--corPalavra);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    padding: 20px;
+}
+fieldset legend{
+    padding: 0 20px 0;
+}
+fieldset .campo{
+    width: 100%;
+    height: 30px;
+}
+
+.btn{
+    padding: 5px 20px;
+    color: var(--corPalavra);
+    background-color: var(--corPadrao);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    cursor: pointer;
+}
