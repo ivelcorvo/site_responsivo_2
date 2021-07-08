@@ -19,7 +19,7 @@
 /* GERAL */
 /* ======================================================================================= */
 .margin-top{
-    margin-top: 80px;
+    margin-top: 180px;
 }
 .margi-bottom{
     margin-bottom: 30px;
@@ -82,7 +82,8 @@ section.principal{
     height: 50px;
     line-height: 50px;
     background-color: var(--corPadrao);
-    position: relative;
+    position: fixed;
+    top: 0;
 }
 
 /* =============================================== */
